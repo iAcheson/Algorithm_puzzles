@@ -1,20 +1,26 @@
 # !/usr/bin/env python3
 # -*- coding: UTF-8 -*-
-# Author: Yunsheng Liu
+# Author: Yunsheng Liu <yunsheng_liu@qq.com>
 # Date: 2020/7/5
+# Modified: Yunsheng Liu
 
 """
-Task:【手套选择】
+    Task:【手套选择】
+    --------------
+    在抽屉里有20只手套。其中，5双黑手套，3双棕色手套和2双灰手套。
+    你只能在黑暗中挑手套，并且只有将手套挑出之后才能检査其颜色。
+    最少要挑几次オ能满足以下条件?
+    (a)至少挑出一双颜色匹配的手套。
+    (b)所有颜色的手套都至少挑出一双匹配的。
 
-在抽屉里有20只手套。其中，5双黑手套，3双棕色手套和2双灰手套。
-你只能在黑暗中挑手套，并且只有将手套挑出之后才能检査其颜色。
-最少要挑几次オ能满足以下条件?
-(a)至少挑出一双颜色匹配的手套。
-(b)所有颜色的手套都至少挑出一双匹配的。
+    【参考文献】
+    [1] Anany Levitin, MariaLevitin, 列维京, et al. 算法谜题[M]. 人民邮电出版社, 2014.
+    [2] https://www.cnblogs.com/wj033/p/9131528.html
 
-【参考文献】
-[1] Anany Levitin, MariaLevitin, 列维京, et al. 算法谜题[M]. 人民邮电出版社, 2014.
-[2] https://www.cnblogs.com/wj033/p/9131528.html
+
+    Note
+    --------------
+    文献使用请注明出处，谢谢！
 """
 
 
@@ -106,3 +112,7 @@ if __name__ == '__main__':
     # 问题任务b
     ans_b = fun(max_count.copy(), count.copy(), 'b')
     print('(b)所有颜色的手套都至少挑出一双匹配的，最多挑{}次。'.format(ans_b))
+
+    # 输出
+    # (a) 至少挑出一双颜色匹配的手套，最多挑11次。
+    # (b) 所有颜色的手套都至少挑出一双匹配的，最多挑19次。
